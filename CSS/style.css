@@ -138,6 +138,9 @@ footer .copyright {
 /* Breakpoint */
 
 @media (min-width: 320px) {
+    .home img {
+        width: 250px;
+    }
 
     #about p,
     h5 {
