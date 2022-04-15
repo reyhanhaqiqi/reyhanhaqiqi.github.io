@@ -116,8 +116,13 @@
     background-color: #f3d8ff;
 }
 
+#contact .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .icon-contact img {
-    width: 60px;
+    width: 40px;
 }
 
 footer .copyright {
@@ -132,6 +137,21 @@ footer .copyright {
 
 /* Breakpoint */
 
+@media (min-width: 320px) {
+    .icon-contact img {
+        width: 40px;
+    }
+
+    .copyright {
+        margin-top: -2px;
+        height: 120px;
+    }
+
+    .copyright p {
+        margin-top: 30px;
+    }
+}
+
 
 @media (min-width: 768px) {
     .home-text .myName {
@@ -139,8 +159,7 @@ footer .copyright {
     }
 
     .icon-contact img {
-        width: 100px;
-        padding: 0 0 10px;
+        width: 90px;
     }
 
     footer .copyright {
