@@ -4,6 +4,8 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* ! All Selector End */
@@ -101,10 +103,6 @@
     z-index: 5;
 }
 
-.home-text .myName {
-    font-size: 40px;
-}
-
 #about {
     background-color: #f3d8ff;
     margin-top: -50px;
@@ -133,6 +131,8 @@ footer .copyright {
 /* ! Responsive Selector Start */
 
 /* Breakpoint */
+
+
 @media (min-width: 768px) {
     .home-text .myName {
         font-size: 50px;
