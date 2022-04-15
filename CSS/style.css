@@ -138,8 +138,22 @@ footer .copyright {
 /* Breakpoint */
 
 @media (min-width: 320px) {
+
+    #about p,
+    h5 {
+        font-size: 15px;
+    }
+
+    #about p.quotes-text {
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 15px;
+    }
+
     .icon-contact img {
-        width: 40px;
+        width: 30px;
     }
 
     .copyright {
