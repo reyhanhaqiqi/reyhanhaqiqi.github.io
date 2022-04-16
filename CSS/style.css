@@ -144,15 +144,16 @@ footer .copyright {
 
     #about p,
     h5 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #about p.quotes-text {
         font-size: 15px;
     }
 
+    th,
     td {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .icon-contact img {
@@ -173,6 +174,10 @@ footer .copyright {
 @media (min-width: 768px) {
     .home-text .myName {
         font-size: 50px;
+    }
+
+    .home img {
+        width: 400px;
     }
 
     .icon-contact img {
