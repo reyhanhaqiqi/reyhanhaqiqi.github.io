@@ -461,25 +461,35 @@
     <div class="message container mb-5">
         <div class="row justify-content-center pt-5">
             <div class="col-md-6">
-                <form>
+                <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                    <p>We have received the message you sent.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <form name="contact-form">
                     <div class="mb-3">
                         <label for="name" class="form-label">Full Name</label>
-                        <input type="name" class="form-control shadow-sm" required id="name" aria-describedby="name">
+                        <input type="name" name="name" class="form-control shadow-sm" required id="name"
+                            aria-describedby="name">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control shadow-sm" required id="email">
+                        <input type="email" name="email" class="form-control shadow-sm" required id="email">
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
                         <div class="form-floating">
-                            <textarea class="form-control shadow-sm" required placeholder="Leave a comment here"
-                                id="floatingTextarea2" style="height: 100px"></textarea>
+                            <textarea class="form-control shadow-sm" name="message" required
+                                placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
                         </div>
                     </div>
-                    <button type="submit" id="sweetalert" class="btn btn-send"
+                    <button type="submit" id="sweetalert" class="btn btn-send btn-kirim"
                         style="background-color: #9810f2; color: #ffffff;">Send
                         <i class="fas fa-paper-plane"></i></button>
+                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </button>
                 </form>
             </div>
         </div>
@@ -520,6 +530,49 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Google Sheet JS -->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxiCWGpDSJZc5hCd-mzEWZngQBRn88PqKdpxfKPpLk1IN24KGJoGX-FkkScOu57LAgrow/exec'
+        const form = document.forms['contact-form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            /* When click submit button */
+            /* Show button loading, none the button send*/
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    /* Show button Send, none the button Loading*/
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+
+                    /* Show Alert */
+                    myAlert.classList.toggle('d-none');
+                    Swal.fire({
+                        title: 'Thank You!!',
+                        text: 'Have a visited My Portfolio',
+                        imageUrl: 'https://c.tenor.com/KgkDyvM61poAAAAC/anime-dancing.gif',
+                        imageWidth: 400,
+                        imageHeight: 200,
+                        imageAlt: 'Custom image',
+                    })
+
+                    /* Reset Form */
+                    form.reset();
+
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
     <!-- Main JS -->
     <script src="JS/main.js"></script>
