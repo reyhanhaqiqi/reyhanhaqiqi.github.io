@@ -22,7 +22,6 @@
     --third-color: #47b8e0;
     --thickness: 3px;
     --duration: 1s;
-    margin-top: -25px;
     position: fixed;
     z-index: 999;
     width: 100%;
