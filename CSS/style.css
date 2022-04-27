@@ -22,6 +22,7 @@
     --third-color: #47b8e0;
     --thickness: 3px;
     --duration: 1s;
+    margin-top: -25px;
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -111,8 +112,8 @@
 }
 
 #contact {
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     background-color: #f3d8ff;
 }
 
@@ -121,8 +122,109 @@
     padding-bottom: 60px;
 }
 
-.icon-contact img {
-    width: 40px;
+.media {
+    width: 150px;
+    height: 125px;
+    border-radius: 20px;
+    background-color: #f3d8ff;
+}
+
+.media .logo {
+    width: 100px;
+    height: 100px;
+    background-color: #f3d8ff;
+    position: relative;
+    border-radius: 50%;
+    top: -50px;
+    left: 14px;
+}
+
+.media .logo::before,
+.media .logo::after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ff006e, #9810f2, #8338ec, #3a86ff);
+    z-index: -1;
+    background-size: 900%;
+    animation: borderbg 10s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes borderbg {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.media .logo::after {
+    filter: blur(3px);
+}
+
+.media .logo img {
+    margin: 25px 20px;
+}
+
+.media .desc {
+    margin-top: -50px;
+    font-variant: small-caps;
+}
+
+.media .desc h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.media .desc button {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.media .desc button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.media .desc button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.media .desc button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.media .desc button::after {
+    background-color: #fff;
+}
+
+.media .desc button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.input:focus {
+    transform: scale(1.04);
 }
 
 footer .copyright {
@@ -152,8 +254,11 @@ footer .copyright {
         font-size: 16px;
     }
 
-    .icon-contact img {
-        width: 30px;
+    .media {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
     .copyright {
@@ -176,10 +281,6 @@ footer .copyright {
         width: 400px;
     }
 
-    .icon-contact img {
-        width: 90px;
-    }
-
     footer .copyright {
         padding-bottom: 20px;
     }
@@ -195,6 +296,12 @@ footer .copyright {
 
     #about p.quotes-text {
         font-size: 18px;
+    }
+
+    .media {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 80px;
     }
 
 }
