@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ! Meta Start -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ! Meta End -->
+
+
+    <!-- ! CSS Start -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="../CSS/font-awesome.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style_questioner.css">
+    <!-- ! CSS End -->
+
+
+    <!-- ! Title Page Start -->
+    <!-- Icon & Title -->
+    <link rel="icon" href="../IMG/Icon-Title.png">
+    <title>Questioner - ReyhanHQQ</title>
+    <!-- ! Title Page End -->
+</head>
+
+<body>
+    <!-- ! Preloader Start -->
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader_content">
+            <div class="preloader_first"></div>
+            <div class="preloader_second"></div>
+            <div class="preloader_third"></div>
+        </div>
+    </div>
+    <!-- ! Preloader End -->
+
+
+    <!-- ! Navbar Start -->
+    <nav class="navbar navbar-light shadow-sm fixed-top" style="background-color: #ffffff;">
+        <div class="container lg">
+            <!-- Name/logo Start-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../IMG/Icon-NavBar.png" alt="" width="30">
+            </a>
+            <!-- Name/Logo End-->
+
+            <!-- Navigation Start-->
+            <div class="dropdown">
+                <button class="btn btn-secondary px3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="background-color: #9810f2;">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#home">Home</a></li>
+                    <li><a class="dropdown-item" href="#about">About</a></li>
+                    <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                    <li><a class="dropdown-item" href="#questioner">Question</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Navigation End -->
+        </div>
+    </nav>
+    <!-- ! Navbar End -->
+
+
+    <!-- ! Form Question Start -->
+    <div class="container text-center" style="padding-top: 100px;">
+        <h3 class="fw-bold">QUESTION OF RESEARCH</h3>
+    </div>
+
+    <!-- Form Introduce Start -->
+    <div id="introduce">
+        <div class="container">
+            <div class="container box-1">
+                <h4 class="fw-bold text-center">INTRODUCE</h4>
+                <div class="row justify-content-center introduce">
+                    <div class="col-md-11">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="Name" aria-describedby="name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="age" class="form-label">Age</label>
+                                <input type="text" class="form-control" id="age" name="Age" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="agency" class="form-label">Agency</label>
+                                <select class="form-select" id="agency" name="Agency"
+                                    aria-label="Default select example" required>
+                                    <option selected> - </option>
+                                    <option value="1">Company</option>
+                                    <option value="2">Campus</option>
+                                    <option value="3">School</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="agency-name" class="form-label">Agency Name</label>
+                                <input type="text" class="form-control" id="agency-name" name="Agency Name" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container box-2">
+                <h4 class="fw-bold text-center">Question</h4>
+                <div class="row justify-content-center question">
+                    <div class="col-md-11">
+                        <form>
+                            <div class="mb-3">
+                                <label for="view" class="form-label">Web View</label><br>
+                                <div class="input-group mb-1">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="radio" value="Interesting"
+                                            aria-label="Radio button for following text input" id="view"
+                                            name="Web View">
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with radio button"
+                                        disabled value="Interesting" name="Web View">
+                                </div>
+                                <div class="input-group mb-4">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="radio" value="Not Attractive"
+                                            aria-label="Radio button for following text input" id="view"
+                                            name="Web View">
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with radio button"
+                                        disabled value="Not Attractive" name="Web View">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="content" class="form-label">Web Content</label><br>
+                                    <div class="input-group mb-1">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="radio" value="Complete"
+                                                aria-label="Radio button for following text input" id="content"
+                                                name="Web Content">
+                                        </div>
+                                        <input type="text" class="form-control"
+                                            aria-label="Text input with radio button" disabled value="Complete"
+                                            name="Web Content">
+                                    </div>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="radio" value="Not Complete"
+                                                aria-label="Radio button for following text input" id="content"
+                                                name="Web Content">
+                                        </div>
+                                        <input type="text" class="form-control"
+                                            aria-label="Text input with radio button" disabled value="Not Complete"
+                                            name="Web Content">
+                                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form Introduce End -->
+    <!-- !Form Question End -->
+
+
+    <!-- ! Footer Start -->
+    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#9810f2" fill-opacity="1"
+                d="M0,32L15,64C30,96,60,160,90,176C120,192,150,160,180,154.7C210,149,240,171,270,176C300,181,330,171,360,149.3C390,128,420,96,450,96C480,96,510,128,540,160C570,192,600,224,630,245.3C660,267,690,277,720,272C750,267,780,245,810,208C840,171,870,117,900,117.3C930,117,960,171,990,197.3C1020,224,1050,224,1080,192C1110,160,1140,96,1170,64C1200,32,1230,32,1260,53.3C1290,75,1320,117,1350,117.3C1380,117,1410,75,1425,53.3L1440,32L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z">
+            </path>
+        </svg>
+
+        <!-- Name Footer Start -->
+        <div class="copyright text-center" style="background-color: #9810f2; color: #ffffff;">
+            <p>2022 | Created with &nbsp;<i class="fas fa-heart fa-beat text-warning"></i>&nbsp; by <a
+                    href="https://www.instagram.com/_reyhanhaqiqi___/" target="_blank" class="fw-bold"
+                    style="color: #ffffff; text-decoration: none;">ReyhanHQQ</a></p>
+        </div>
+        <!-- Name Footer End -->
+    </footer>
+    <!-- ! Footer End -->
+
+
+    <!-- ! JavaScript Start  -->
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Jquery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Typed JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Google Sheet JS -->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxiCWGpDSJZc5hCd-mzEWZngQBRn88PqKdpxfKPpLk1IN24KGJoGX-FkkScOu57LAgrow/exec'
+        const form = document.forms['contact-form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            /* When click submit button */
+            /* Show button loading, none the button send*/
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    /* Show button Send, none the button Loading*/
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+
+                    /* Show Alert */
+                    myAlert.classList.toggle('d-none');
+                    Swal.fire({
+                        title: 'Thank You!!',
+                        text: 'Have a visited My Portfolio',
+                        imageUrl: 'https://c.tenor.com/KgkDyvM61poAAAAC/anime-dancing.gif',
+                        imageWidth: 400,
+                        imageHeight: 200,
+                        imageAlt: 'Custom image',
+                    })
+
+                    /* Reset Form */
+                    form.reset();
+
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- Main JS -->
+    <script src="../JS/main.js"></script>
+    <!-- ! JavaScript End -->
+</body>
+
+</html>

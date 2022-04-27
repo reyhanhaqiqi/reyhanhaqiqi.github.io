@@ -110,10 +110,25 @@
     color: #000000;
 }
 
+#questioner {
+    margin-top: 150px;
+    margin-bottom: 250px;
+    width: 100%;
+    padding-top: 60px;
+    background-color: #f4f5f6;
+}
+
+#questioner .card-body .btn {
+    border: 1px inset black;
+}
+
+#questioner .card-body .btn:hover {
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.100), -5px 5px 15px rgba(0, 0, 0, 0.100);
+}
+
 #contact {
     margin-top: 150px;
     margin-bottom: 100px;
-    background-color: #f3d8ff;
 }
 
 #contact .container {
@@ -253,6 +268,10 @@ footer .copyright {
         font-size: 16px;
     }
 
+    #questioner {
+        height: 670px;
+    }
+
     .media {
         margin-top: 40px;
         margin-bottom: 60px;
@@ -295,6 +314,10 @@ footer .copyright {
 
     #about p.quotes-text {
         font-size: 18px;
+    }
+
+    #questioner {
+        height: 490px;
     }
 
     .media {
