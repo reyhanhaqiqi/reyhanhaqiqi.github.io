@@ -1,6 +1,5 @@
 #question {
     width: 100%;
-    height: 1850px;
     margin-top: 40px;
     padding-top: 50px;
     background-color: #f4f5f6;
@@ -8,7 +7,7 @@
 
 #question .container .box-1 {
     width: 100%;
-    height: 520px;
+    height: 570px;
     padding-top: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -140,16 +139,36 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
 @media (min-width: 320px) {
 
     #question {
-        height: 2000px;
+        height: 2150px;
         font-size: 14px;
     }
 
+    #question .container .box-1 .btn-upload {
+        width: 270px;
+        height: 45px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding-top: 13px;
+        background-color: #001eff;
+        border-radius: 4px;
+    }
+
+    #question .container .box-1 .btn-upload:active {
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.200), 0 0 10px rgba(0, 0, 0, 0.200);
+    }
+
+    .btn-upload a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
     #question .container .box-2 {
-        height: 1350px;
+        height: 1430px;
     }
 
     .submit img {
-        width: 340px;
+        width: 300px
     }
 
     .submit .btn-answer {
@@ -158,7 +177,137 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
 
     button {
         padding: 20px 15px;
-        margin-left: 88px;
+        margin-left: 65px;
+    }
+
+    .submit .btn-answer p {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 375px) {
+
+    #question .container .box-1 .btn-upload {
+        width: 325px;
+        height: 45px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding-top: 13px;
+        background-color: #001eff;
+        border-radius: 4px;
+    }
+
+    .submit img {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .submit .btn-answer {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 20px 15px;
+        margin-left: 90px;
+    }
+
+    .submit .btn-answer p {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 425px) {
+
+    #question .container .box-1 .btn-upload {
+        width: 375px;
+        height: 45px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding-top: 13px;
+        background-color: #001eff;
+        border-radius: 4px;
+    }
+
+    .submit img {
+        width: 300px;
+        margin-left: 40px;
+    }
+
+    .submit .btn-answer {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 20px 15px;
+        margin-left: 115px;
+    }
+
+    .submit .btn-answer p {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #question .container .box-1 .btn-upload {
+        width: 615px;
+        height: 45px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding-top: 13px;
+        background-color: #001eff;
+        border-radius: 4px;
+    }
+
+    .submit img {
+        width: 300px;
+        margin-left: 40px;
+    }
+
+    .submit .btn-answer {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 20px 15px;
+        margin-left: -40px;
+    }
+
+    .submit .btn-answer p {
+        margin-bottom: 30px;
+        margin-left: -40px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    #question .container .box-1 .btn-upload {
+        width: 830px;
+        height: 45px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding-top: 13px;
+        background-color: #001eff;
+        border-radius: 4px;
+    }
+
+    .submit img {
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    .submit .btn-answer {
+        margin-top: 60px;
+        margin-left: -20px;
+    }
+
+    button {
+        padding: 20px 15px;
+        margin-left: -40px;
     }
 
     .submit .btn-answer p {
@@ -171,13 +320,27 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
 
     #question {
         font-size: 17px;
+        height: 2190px;
     }
 
-    #question .container .box-1 .btn {
+    #question .container .box-1 .btn-upload {
         width: 1165px;
-        font-weight: bold;
-        color: #ffffff;
+        height: 45px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding-top: 13px;
         background-color: #001eff;
+        border-radius: 4px;
+    }
+
+    #question .container .box-1 .btn-upload:active {
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.200), 0 0 10px rgba(0, 0, 0, 0.200);
+    }
+
+    .btn-upload a {
+        text-decoration: none;
+        color: #ffffff;
     }
 
     .submit img {
@@ -192,11 +355,13 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
     button {
         padding: 20px 15px;
         margin: 0 0px;
+        margin-left: 20px;
     }
 
     .submit .btn-answer p {
         font-size: 20px;
         width: 500px;
+        margin-left: 20px;
     }
 
 }

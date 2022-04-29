@@ -15,8 +15,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="../CSS/font-awesome.css">
-    <!-- AOS Animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_questioner.css">
@@ -91,7 +89,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="age" class="form-label">Age</label>
-                                <input type="text" class="form-control" id="age" name="Age" required>
+                                <input type="number" class="form-control" id="age" name="Age" required>
                             </div>
                             <div class="mb-3">
                                 <label for="agency" class="form-label">Agency</label>
@@ -107,10 +105,16 @@
                                 <label for="name-agency" class="form-label">Name of Agency</label>
                                 <input type="text" class="form-control" id="name-agency" name="Name of Agency" required>
                             </div>
-                            <div class="mb-3">
-                                <a
-                                    href="https://drive.google.com/drive/folders/1mbGbFE5d7Bx-JwoCXgq14b8BPxuUnsHN?usp=sharing"><button
-                                        class="btn">Tap to upload image</button></a>
+                            <div class="container btn-upload">
+                                <div class="row justify-content-center">
+                                    <div class="col text-center">
+                                        <a
+                                            href="https://drive.google.com/drive/folders/1mbGbFE5d7Bx-JwoCXgq14b8BPxuUnsHN?usp=sharing">
+                                            <p>Tap to Upload Photo</p>
+                                        </a>
+                                        <p><i>I will show some of your photos as part of the reviewer</i></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -234,19 +238,21 @@
                             </div>
 
                             <div class="mb-5">
-                                <label for="comment-1" class="form-label">What kind of information system do you often
-                                    encounter?</label>
+                                <label for="comment-1" class="form-label">In your opinion, how does the web look
+                                    attractive and interactive?</label>
                                 <textarea required class="form-control" placeholder="give some of your explanation"
-                                    id="comment-1" name="What kind of information system do you often
-                                        encounter?" rows="6"></textarea>
+                                    id="comment-1"
+                                    name="In your opinion, how does the web look attractive and interactive?"
+                                    rows="8"></textarea>
                             </div>
 
                             <div class="mb-3">
-                                <label for="comment-2" class="form-label">In your opinion, what type of startup is often
-                                    used by people?</label>
+                                <label for="comment-2" class="form-label">Explain in your opinion which is more
+                                    responsive in use between web applications or android applications?</label>
                                 <textarea required class="form-control" placeholder="give some of your explanation"
-                                    id="comment-2" name="In your opinion, what type of startup is often used by people?"
-                                    rows="6"></textarea>
+                                    id="comment-2"
+                                    name="Explain in your opinion which is more responsive in use between web applications or android applications?"
+                                    rows="8"></textarea>
                             </div>
                         </div>
                     </div>
@@ -255,6 +261,7 @@
             </div>
         </div>
         <!-- ! Form Question End -->
+
 
         <!-- ! Submit Section Start -->
         <div class="container mt-5 submit">
@@ -307,15 +314,8 @@
 
 
     <!-- ! JavaScript Start  -->
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- SweetAlert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Jquery JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Typed JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -343,17 +343,6 @@
                     /* Show button Send, none the button Loading*/
                     btnLoading.classList.toggle('d-none');
                     btnKirim.classList.toggle('d-none');
-
-                    /* Show Alert */
-                    myAlert.classList.toggle('d-none');
-                    Swal.fire({
-                        title: 'Thank You!!',
-                        text: 'Have a visited My Portfolio',
-                        imageUrl: 'https://c.tenor.com/KgkDyvM61poAAAAC/anime-dancing.gif',
-                        imageWidth: 400,
-                        imageHeight: 200,
-                        imageAlt: 'Custom image',
-                    })
 
                     /* Reset Form */
                     form.reset();
