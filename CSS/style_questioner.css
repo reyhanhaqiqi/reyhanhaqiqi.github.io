@@ -72,12 +72,12 @@
 @media (min-width: 320px) {
 
     #question {
-        height: 2150px;
+        height: 2250px;
         font-size: 14px;
     }
 
     #question .container .box-1 .btn-upload {
-        width: 270px;
+        width: 290px;
         height: 45px;
         box-sizing: border-box;
         margin-top: 30px;
@@ -98,7 +98,7 @@
     }
 
     #question .container .box-2 {
-        height: 1430px;
+        height: 1500px;
     }
 
     .submit img {
