@@ -1001,7 +1001,7 @@ section,
   background-color: #040B14;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(74, 74, 74, 0.5);
   transition: box-shadow 0.3s ease;
 }
 
@@ -1068,7 +1068,7 @@ section,
   background-color: #040B14;
   height: 100%;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(74, 74, 74, 0.5);
   transition: box-shadow 0.3s ease;
   border-radius: 20px;
 }
